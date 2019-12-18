@@ -12,6 +12,7 @@ namespace Logtifier.Example
         {
             var loggerFactory = LoggerFactory.Create(builder =>
             {
+                //переделать метод AddTelegram на абстрактную сущность для лог в различные апи и соц сети
                 builder
                     .AddFilter("Microsoft", LogLevel.Warning)
                     .AddFilter("System", LogLevel.Warning)
